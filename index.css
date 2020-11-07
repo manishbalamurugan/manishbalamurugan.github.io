@@ -164,9 +164,8 @@ header table {
     background:rgb(255, 44, 90);
 }
 #rightImage {
-    background: url("images/manish(2).png") center center;
+    background: url("images/card.png") center center;
     background-repeat:no-repeat;
-    background-size: 300px 300px;
 }
 #work {
     width:92vw;
