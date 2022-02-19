@@ -5,58 +5,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Manish Balamurugan</title>
+    <meta name="author" content="Manish Balamurugan">
+    <meta name="description" content="Personal website and portfolio">
+    <meta name="keywords" content="CS Researcher, UVA Student, Programmer">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="assets/main.css">
     <link rel="icon" href="images/favicon.ico" />
+    <style>
+        a:link{
+            text-decoration: none;
+            color:black
+        }
+        a:visited{
+            text-decoration: none;
+            color:black;
+        }
+        a:hover {
+            text-decoration: none;
+            color:orange;
+        }
+        a:active{
+            text-decoration: none;
+            color:black;
+        }
+    </style>
+
+<style>
+	/* 12 cols = 100% */
+	/* 1 col = 100/12 = 8.33% */
+	* {
+		box-sizing: border-box;
+	}
+	
+	[class*="col"] {
+		width: 100%; /* mobile first - 100% width */
+	}
+	
+	
+	/* For large enough screens, use 12-column grid */
+	@media only screen and (min-width: 768px) {
+		[class*="col"] {
+          width: 100%;
+      }
+	}
+
+    @media only screen and (min-width: 768px) {
+        [class*="col"] {
+          width: 200%;
+      }
+    } 
+	</style>
+
 </head>
 <body>
-    <div id="loading">
-        <div id="spinner"></div>
-    </div>
-    <div id="magnify">
-        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
-        <div id="img_here"></div>
-    </div>
-    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
-        <table>
-            <tr>
-                <td id="logo"></td>
-                <!-- <td id="navigation">
-                    <a href="#work">work</a>
-                    <a href="#bio">about</a>
-                    <a href="">blog</a>
-                    <a href="#contact">contact</a>
-                </td> -->
-            </tr>
-        </table>
-    </header>
-    <table id="top_part">
-        <tr>
-            <td id="rightImage" class="animated jackInTheBox" style="animation-delay:2.2s;"></td>
-            <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
-                <h1>Hi, Manish here!</h1>
-                <h4 id="body" >I'm currently a 1st year undergraduate student at the University of Virginia where I'm planning on
-                    studying Computer Science on the Premed track. I spend most of my free time working on my startup <a href="https://hyphora.org">Hyphora</a> and picking up new skills. 
-                    I'm interested in precision medicine, medtech, and entrepreneurship. 
-                    <br></br>
-                    When I'm not in front of a computer screen, you can usually find my reading a book, out exploring with friends, or just listening to some music.
-                    <br></br>
-                    You can get in touch with me here at <a href="mailto:manish@virginia.edu">manish@virginina.edu</a> or check out my socials below!
-                </h4>
-                <table>
-                    <tr>
-                        <td class="animated zoomIn" style="animation-delay:2.2s;"><a href = "https://www.instagram.com/manishbalamurugan/?hl=en" class="social"><i class="fab fa-instagram"></i></a></td>
-                        <td class="animated zoomIn" style="animation-delay:2.4s;"><a href = "https://www.linkedin.com/in/manishbalamurugan/" class="social"><i class="fab fa-linkedin"></i></a></td>
-                        <td class="animated zoomIn" style="animation-delay:2.6s;"><a href = "https://www.facebook.com/manishbalamurugan" class="social"><i class="fab fa-facebook"></i></a></td>
-                        <td class="animated zoomIn" style="animation-delay:2.8s;"><a href = "https://github.com/manishbalamurugan" class="social"><i class="fab fa-github"></i></a></td>
-                    </tr>
-                </table>
-            </td>
-            
-        </tr>
-    </table>
-    <script src="index.js" type="text/javascript"></script>
+    <section>
+        <nav class="container" style="padding-right: 1rem; padding-left: 1rem; display: inline-table; float: right;">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="resume.html">resume</a></li>
+                <li><a href="https://github.com/manishbalamurugan">portfolio</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </section>
+    <main>
+    <section id="home" style="padding-top: 10rem; text-align: center;">
+        <div class="container">
+            <h1 style="font-size:75px">manish balamurugan.</h1>
+            <h3 style="font-size:25px">CS @ UVA | Software Developer | Entrepreneur</h3>
+        </div>
+        <div id="icons">
+            <a href="https://www.facebook.com/manishbalamurugan">
+                <img class="button"  src="images/logos/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://www.linkedin.com/in/manishbalamurugan">
+                <img class="button"  src="images/logos/linkedin.svg" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/manishbalamurugan">
+                <img class="button"  src="images/logos/github.svg" alt="GitHub">
+            </a>
+            <a href="https://www.instagram.com/manishbalamurugan/?hl=en">
+                <img class="button"  src="images/logos/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://twitter.com/manishwdym">
+                <img class="button"  src="images/logos/twitter.svg" alt="Twitter">
+            </a>
+      </div>
+    </section>
+    <section id="about" style="text-align: center">
+        <h2 style="font-size:45px; text-align:left; padding-bottom: 1rem;">about</h2>
+        <h3 style="text-align:left; font-size:20px">I'm currently a 2nd year Computer Science student at the University of Virginia. I spend most of my free time working on my startup <a href="https://hyphora.org">Hyphora</a>, a tech startup focused on student development, and picking up new skills. 
+            Currently, I'm looking for internship opportunities in Tech Development/Consulting & would love to contribute from my experience. <br><br>When I'm not in front of a computer screen, you can usually find my reading a book, out exploring with friends, or just listening to some music.
+            You can get in touch with me here at <a href="mailto:mb2mcc@virginia.edu">mb2mcc@virginina.edu</a> or check out my socials!
+        </h3>
+    </section>
+    <section id="resume" style="text-align: center">
+        <h2 style="font-size:45px; text-align:left; padding-bottom: 1rem;">resume</h2>
+        <iframe title="resume" style="text-align:center" height="800" width="950" src="assets/manish+balamurugan+resume.pdf"></iframe>
+    </section>
+    </main>
+    <footer>
+        <section id="footer" style="color:black; text-align:center; padding-top:5rem">
+            <div>
+                <h1 style="font-weight:bold; font-size:20px; color: darkslateblue;  text-align: center;">contact</h1>
+                <nav class="container" style="padding:0; text-align: center;">
+                    <ul style="text-align: center; display: inline-flex;">
+                    <li><a href="https://www.facebook.com/manishbalamurugan">facebook</a></li>
+                    <li><a href="https://www.linkedin.com/in/manishbalamurugan">linkedin</a></li>
+                    <li><a href="https://github.com/manishbalamurugan">github</a></li>
+                    <li><a href="https://www.instagram.com/manishbalamurugan/?hl=en">instagram</a></li>
+                    <li><a href="https://twitter.com/manishwdym">twitter</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <h1 style="font-weight:bold; font-size:20px; color: darkslateblue;  text-align: center;">menu</h1>
+                <nav class="container" style="padding:0; text-align: center;">
+                    <ul>
+                        <li><a href="#home">home</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#resume">resume</a></li>
+                        <li><a href="https://github.com/manishbalamurugan">portfolio</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <small style="font-weight:bold">© Copyright 2022 Manish Balamurugan (mb2mcc). All rights reserved.</small>
+    </footer>
 </body>
 </html>
