@@ -12,7 +12,6 @@ const withMDX = nextMDX({
 })
 
 const nextConfig = {
-  pageExtensions: ['jsx', 'mdx'],
   reactStrictMode: true,
   swcMinify: true,
   experimental: {
@@ -22,4 +21,4 @@ const nextConfig = {
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
 }
 
-export default withMDX(nextConfig)
+module.exports = withMDX(nextConfig)
