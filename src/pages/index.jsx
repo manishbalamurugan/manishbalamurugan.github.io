@@ -130,7 +130,13 @@ function Resume() {
       company: 'Johns Hopkins University School of Medicine',
       title: 'AI/ML Research Intern',
       start: 'Oct 2018',
-      end: 'Mar 2021',
+      end: 'May 2021',
+    },
+    {
+      company: 'University of Virginia Walsh Lab',
+      title: 'AI/ML Research Intern',
+      start: 'Jan 2021',
+      end: 'May 2021',
     },
     {
       company: 'Keva Health',
@@ -201,7 +207,7 @@ function TechStack() {
         <MailIcon className="h-6 w-6 flex-none" />
         <span className="ml-3">Tech Stack</span>
       </h2>
-      <div className="grid grid-cols-6 gap-8">
+      <div className="grid grid-cols-6 gap-6">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-line.svg" />
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-plain-wordmark.svg" />
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
@@ -289,7 +295,7 @@ export default function Home({ articles }) {
           </div>
           <div className='text-justify p-4'>
             <h1 className="text-justify text-4xl mb-10 font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              Hi! My name is Manish,
+              Hi 👋🏽! My name is Manish,
             </h1>
             <p className="text-base text-zinc-600 text-lg dark:text-zinc-300">
               I'm an builder who loves scaling new concepts, trying out new tech, and going on new adventures! 
@@ -327,12 +333,12 @@ export default function Home({ articles }) {
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-           {articles.map((article) => (
+           {/* {articles.map((article) => (
               <Article key={article.slug} article={article} />
-            ))}
+            ))} */}
+            <Resume />
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-          <Resume />
             <TechStack />
           </div>
         </div>

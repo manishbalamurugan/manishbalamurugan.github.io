@@ -9,10 +9,6 @@ const withMDX = nextMDX({
     remarkPlugins: [remarkGfm],
     rehypePlugins: [rehypePrism],
   },
-  mdxOptions: {
-    rehypePlugins: [rehypePrism],
-    remarkPlugins: [remarkGfm],
-  },
 })
 
 const nextConfig = {
@@ -22,6 +18,9 @@ const nextConfig = {
   experimental: {
     newNextLinkBehavior: true,
     scrollRestoration: true,
+    images: {
+      unoptimized: true,
+    },
   },
   pageExtensions: ['js', 'jsx', 'mdx'],
 }
