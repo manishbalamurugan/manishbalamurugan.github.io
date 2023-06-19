@@ -73,8 +73,8 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
-      - name: Install MDX dependencies
-        run: ${{ steps.detect-package-manager.outputs.runner }} add @next/mdx remark-gfm @mapbox/rehype-prism
+     - name: Install MDX dependencies
+        run: ${{ steps.detect-package-manager.outputs.manager }} add @next/mdx remark-gfm @mapbox/rehype-prism
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Static HTML export with Next.js
