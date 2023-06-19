@@ -10,6 +10,8 @@ const nextConfig = {
     },
   },
   pageExtensions: ['js', 'jsx'],
+  basePath: '/manishbalamurugan.github.io',
+  assetPrefix: '/manishbalamurugan.github.io/',
 }
 
 export default nextConfig
