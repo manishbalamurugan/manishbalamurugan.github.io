@@ -7,10 +7,10 @@ const nextConfig = {
   pageExtensions: ['jsx', 'mdx'],
   reactStrictMode: true,
   swcMinify: true,
-  experimental: {
-    newNextLinkBehavior: true,
-    scrollRestoration: true,
-  },
+  // experimental: {
+  //   newNextLinkBehavior: true,
+  //   scrollRestoration: true,
+  // },
   webpack: (config, { dev }) => {
     config.module.rules.push({
       test: /\.mdx?$/,
@@ -25,7 +25,6 @@ const nextConfig = {
         '@mdx-js/loader',
       ],
     });
-
     return config;
   },
 }
