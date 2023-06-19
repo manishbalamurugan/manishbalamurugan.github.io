@@ -21,4 +21,4 @@ const nextConfig = {
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
 }
 
-module.exports = withMDX(nextConfig)
+export default withMDX(nextConfig)
