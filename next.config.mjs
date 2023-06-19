@@ -19,6 +19,7 @@ const withMDX = nextMDX({
     remarkPlugins: [remarkGfm],
     rehypePlugins: [rehypePrism],
   },
+  pageExtensions: ['js', 'jsx', 'md', 'mdx'],
 })
 
 export default withMDX(nextConfig)
