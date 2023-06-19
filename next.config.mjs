@@ -12,6 +12,7 @@ const withMDX = nextMDX({
 })
 
 const nextConfig = {
+  output: 'export',
   reactStrictMode: true,
   swcMinify: true,
   experimental: {
