@@ -76,7 +76,7 @@ jobs:
       - name: Install MDX dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} add @next/mdx remark-gfm @mapbox/rehype-prism
       - name: Check Next.js configuration
-          run: cat next.config.mjs
+        run: cat next.config.mjs
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Static HTML export with Next.js
