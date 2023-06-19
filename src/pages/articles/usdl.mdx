@@ -1,0 +1,13 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const meta = {
+  author: 'Manish Balamurugan',
+  date: '2022-01-07',
+  title: 'USDL: Inexpensive medical imaging using deep learning techniques and ultrasound technology',
+  href: 'https://asmedigitalcollection.asme.org/BIOMED/proceedings/DMD2020/83549/V001T02A001/1085763',
+  external: true,
+  description:
+    `In this study, we present USDL, a novel model that employs deep learning algorithms in order to reconstruct and enhance corrupted ultrasound images. We utilize an unsupervised neural network called an autoencoder which works by compressing its input into a latent-space representation and then reconstructing the output from this representation. We trained our model on a dataset that compromises of 15,700 in vivo images of the neck, wrist, elbow, and knee vasculature and compared the quality of the images generated using the structural similarity index (SSIM)...`,
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
