@@ -10,6 +10,4 @@ export const meta = {
     `Cotton balls are a versatile and efficient tool commonly used in neurosurgical procedures to absorb fluids and manipulate delicate tissues. However, the use of cotton balls is accompanied by the risk of accidental retention in the brain after surgery. Retained cotton balls can lead to dangerous immune responses and potential complications, such as adhesions and textilomas. In a previous study, we showed that ultrasound can be safely used to detect cotton balls in the operating area due to the distinct acoustic properties of cotton compared with the acoustic properties of surrounding tissue. In this study, we enhance the experimental setup using a 3D-printed custom depth box and...`,
 }
 
-export default function Cottonball(props) {
-  return <ArticleLayout meta={meta} {...props} />;
-}
+export default (props) => <ArticleLayout meta={meta} {...props} />

@@ -10,6 +10,4 @@ export const meta = {
     `In this study, we present USDL, a novel model that employs deep learning algorithms in order to reconstruct and enhance corrupted ultrasound images. We utilize an unsupervised neural network called an autoencoder which works by compressing its input into a latent-space representation and then reconstructing the output from this representation. We trained our model on a dataset that compromises of 15,700 in vivo images of the neck, wrist, elbow, and knee vasculature and compared the quality of the images generated using the structural similarity index (SSIM)...`,
 }
 
-export default function Usdl(props) {
-  return <ArticleLayout meta={meta} {...props} />;
-}
+export default (props) => <ArticleLayout meta={meta} {...props} />
