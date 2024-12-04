@@ -192,7 +192,7 @@ function Resume() {
       <Button 
         variant="secondary" 
         className="group mt-6 w-full"
-        onClick={() => router.push('/resume.pdf')}
+        onClick={() => {}}
       >
         Download Resume
         <ArrowDownIcon className="h-4 w-4 ml-2 stroke-current" />
